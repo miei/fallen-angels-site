@@ -1,0 +1,97 @@
+@media all and (min-width: 960px) {
+  .logo {
+    font-size: 5.5em;
+  }
+  .content {
+    top: 35%;
+  }
+}
+
+@media all and (max-width: 959px) and (min-width: 603px) {
+  .logo {
+    font-size: 4.5em;
+  }
+  .content {
+    top: 25%;
+  }
+}
+
+@media all and (max-width: 602px) and (min-width: 543px) {
+  .logo {
+    font-size: 4em;
+  }
+  .content {
+    top: 15%;
+  }
+  a {
+    display: block;
+  }
+}
+
+@media all and (max-width: 542px) and (min-width: 375px) {
+  .logo {
+    font-size: 2.8em;
+  }
+  .content {
+    top: 10%;
+  }
+  a {
+    display: block;
+  }
+}
+
+@media all and (max-width: 374px) and (min-width: 50px) {
+  .logo {
+    font-size: 2.8em;
+  }
+  hr {
+    max-width: 180px;
+  }
+  .content {
+    top: 10%;
+  }
+  a {
+    display: block;
+  }
+}
+
+.content {
+  /* position: absolute; */
+  position: absolute;
+  left: 0;
+  right: 0;
+	margin: auto;
+  width: 90%;
+}
+
+.title-container {
+  display: inline-block;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+hr {
+  margin-top: -5px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 0;
+  height: 3px;
+}
+
+a {
+  cursor: pointer;
+  padding: 5px 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}

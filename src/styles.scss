@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Jupiter;
+  src: url("./assets/fonts/Jupiter Pro Regular.otf")
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import "assets/bootstrap-sass/variables";
+
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
+
+.container {
+  max-width: 950px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.logo {
+  font-family: Jupiter;
+}
+
+.logo>a:hover {
+  text-decoration: none;
+}
+
+hr {
+  background-color: #EEEEEE;
+}
