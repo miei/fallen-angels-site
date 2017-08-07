@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavLinksService } from '../../shared/nav-links.service';
+import { NavLinksService } from '../shared/nav-links.service';
 
 @Component({
   selector: 'app-landing',

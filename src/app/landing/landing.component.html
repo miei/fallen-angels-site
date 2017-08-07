@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="content text-center">
+    <div class="title-container">
+      <h1 class="text-center logo">Fallen Angels</h1>
+      <hr>
+      <div class="links">
+        <span *ngFor="let link of links">
+          <a [routerLink]="link.route">{{ link.text }}</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer text-center">
+  <p><em>Fallen Angels is an Odin based FFXIV Free Company.</em></p>
+</div>

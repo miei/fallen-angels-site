@@ -7,7 +7,6 @@ import { NavLinksService } from '../shared/nav-links.service';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  @Input() isCollapsed = true;
   links = [];
 
   constructor(private navLinksService: NavLinksService) {
@@ -15,10 +14,6 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  toggleCollapse() {
-    this.isCollapsed = !this.isCollapsed;
   }
 
 }
