@@ -1,4 +1,4 @@
-import { Input, Directive, HostBinding, HostListener } from '@angular/core';
+import { Input, Directive, HostListener } from '@angular/core';
 
 @Directive({
   selector: '[appCollapse]'
