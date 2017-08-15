@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { NavLinksService } from '../shared/nav-links.service';
 import { AuthService } from '../auth/auth.service';
+import { UserInfo } from '../shared/user-info.model';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +10,7 @@ import { AuthService } from '../auth/auth.service';
 })
 export class NavbarComponent implements OnInit, OnDestroy {
   links = [];
-  userInfo;
+  userInfo: UserInfo;
   userInfoSubscription;
 
   constructor(private navLinksService: NavLinksService, public authService: AuthService) {

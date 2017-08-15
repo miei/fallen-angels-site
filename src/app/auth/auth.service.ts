@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Headers, Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+import { UserInfo } from '../shared/user-info.model';
 
 import * as firebase from 'firebase';
 
@@ -8,7 +9,7 @@ const AUTH_SERVER = 'http://vps366286.ovh.net:5000';
 
 @Injectable()
 export class AuthService {
-  user: Observable<any>;
+  user: Observable<UserInfo>;
 
   constructor(private http: Http) {
     this.user = new Observable(observer => {
