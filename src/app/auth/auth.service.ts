@@ -9,7 +9,6 @@ const AUTH_SERVER = 'http://vps366286.ovh.net:5000';
 @Injectable()
 export class AuthService {
   user: Observable<any>;
-  userSubscription;
 
   constructor(private http: Http) {
     this.user = new Observable(observer => {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from './auth.service';
 
 @Component({
@@ -10,11 +10,12 @@ import { AuthService } from './auth.service';
 export class CallbackComponent implements OnInit {
   code = '';
 
-  constructor(private route: ActivatedRoute, private authService: AuthService) { }
+  constructor(private router: Router, private route: ActivatedRoute, private authService: AuthService) { }
 
   ngOnInit() {
     const code = this.code = this.route.snapshot.queryParams.code;
     this.authService.getJWTAndSignIn(code);
+    this.router.navigate(['/info']);
   }
 
 }
