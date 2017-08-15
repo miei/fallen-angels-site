@@ -4,6 +4,8 @@ import { Observable } from 'rxjs/Observable';
 
 import * as firebase from 'firebase';
 
+const AUTH_SERVER = 'http://vps366286.ovh.net:5000';
+
 @Injectable()
 export class AuthService {
   user: Observable<any>;
@@ -25,7 +27,7 @@ export class AuthService {
 
   // exchange our discord oauth code for a jwt
   getJWTAndSignIn(code) {
-    this.http.get('http://vps366286.ovh.net:5000/auth/discord/callback?code=' + code)
+    this.http.get(AUTH_SERVER + '/auth/discord/callback?code=' + code)
       .subscribe(response => {
         if (response.status !== 200) {
           console.log('auth failed');
@@ -51,6 +53,6 @@ export class AuthService {
   }
 
   authLink() {
-    return 'http://vps366286.ovh.net:5000/auth/discord';
+    return AUTH_SERVER + '/auth/discord';
   }
 }
